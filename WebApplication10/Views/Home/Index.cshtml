@@ -1,0 +1,25 @@
+﻿@model User
+
+@{
+    ViewBag.Title = "User Details";
+}
+
+<h2>User Details</h2>
+
+<div>
+    <h3>Using ViewBag</h3>
+    <p>Name: @ViewBag.UserName</p>
+    <p>Email: @ViewBag.UserEmail</p>
+</div>
+
+<div>
+    <h3>Using ViewData</h3>
+    <p>Name: @ViewData["UserName"]</p>
+    <p>Email: @ViewData["UserEmail"]</p>
+</div>
+
+<div>
+    <h3>Using Model</h3>
+    <p>Name: @Model.Name</p>
+    <p>Email: @Model.Email</p>
+</div>
